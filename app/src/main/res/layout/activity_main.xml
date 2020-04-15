@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/logo"
+        android:src="@drawable/cake"
+        android:layout_centerInParent="true"
+        android:padding="40dp"
+        android:layout_margin="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/splashtext"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Happy Birthday Sri :)"/>
+
+    <TextView
+        android:id="@+id/tagtext"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/splashtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Lets celebrate your birthday uniquely :) "/>
+
+
+
+</RelativeLayout>

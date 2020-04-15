@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.HomeActivity">
+
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" >
+
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Happy Birthday Sri 😍🎂🐏!"
+            android:textSize="25sp"
+            android:gravity="center|center_horizontal|clip_horizontal"
+            android:textColor="#fff"
+            android:id="@+id/tx"
+            />
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail"
+                                android:src="@drawable/sri11"
+
+                                android:onClick="open1"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:text="Susa"
+                                android:textSize="@dimen/album_title" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail1"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open2"
+                                android:clickable="true"
+                                android:src="@drawable/sri12"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail1"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:text="Hari"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail2"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open3"
+                                android:clickable="true"
+                                android:src="@drawable/sri13"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail2"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:text="Devi"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail3"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open4"
+                                android:clickable="true"
+                                android:src="@drawable/sri14"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail3"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:text="Ms Malu"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail5"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open5"
+                                android:clickable="true"
+                                android:src="@drawable/sri15"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail5"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail6"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open6"
+                                android:clickable="true"
+                                android:src="@drawable/sri16"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail6"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail7"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open7"
+                                android:clickable="true"
+                                android:src="@drawable/sri17"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail7"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail8"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open8"
+                                android:clickable="true"
+                                android:src="@drawable/sri12"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail8"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail9"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open3"
+                                android:clickable="true"
+                                android:src="@drawable/sri13"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail9"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail10"
+                                android:src="@drawable/sri14"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open4"
+                                android:clickable="true"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail10"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail11"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open3"
+                                android:clickable="true"
+                                android:src="@drawable/sri13"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail11"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card_view12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/card_margin"
+                        android:elevation="3dp"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/thumbnail12"
+                                android:src="@drawable/sri14"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:onClick="open4"
+                                android:clickable="true"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/title12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnail12"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
